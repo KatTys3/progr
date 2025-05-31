@@ -60,7 +60,7 @@ RankedSales AS (
 SELECT
     FirstName,
     LastName,
-    ROUND(CAST(TotalSales as money), 2),
+    ROUND(CAST(TotalSales AS MONEY), 2) AS TotalSales,
     MostFrequentCategory,
     SalesRank
 FROM RankedSales
